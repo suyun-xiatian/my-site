@@ -1,0 +1,62 @@
+site_name: 夏天的个人网站
+site_description: 统计学习、编程实践、足球观察和 UCSB 交换记录
+site_author: 夏天
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 学习笔记:
+      - learning/index.md
+      - 统计学习: learning/statistics.md
+      - 数学工具箱: learning/math.md
+  - 编程:
+      - coding/index.md
+      - Python 与数据分析: coding/python.md
+      - 建站记录: coding/site.md
+  - 生活:
+      - life/index.md
+      - 足球: life/football.md
+      - UCSB 交换: life/ucsb.md
+      - 书影音: life/media.md
+  - 更新日志: changelog.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+      name: GitHub
