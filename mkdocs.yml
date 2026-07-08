@@ -9,13 +9,13 @@ theme:
   palette:
     - scheme: default
       primary: white
-      accent: deep orange
+      accent: blue
       toggle:
         icon: material/weather-night
         name: 切换到深色模式
     - scheme: slate
       primary: black
-      accent: deep orange
+      accent: light blue
       toggle:
         icon: material/weather-sunny
         name: 切换到浅色模式
