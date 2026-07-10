@@ -1,4 +1,4 @@
-name: Deploy MkDocs site
+name: Deploy Zensical site
 
 on:
   push:
@@ -24,8 +24,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - run: pip install mkdocs-material
-      - run: mkdocs build
+      - run: pip install -r requirements.txt
+      - run: zensical build --clean
 
       - uses: actions/configure-pages@v5
         with:

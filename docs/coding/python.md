@@ -1,3 +1,11 @@
+---
+title: Python 与数据分析
+description: 用 Python 完成数据读取、清洗、分析、建模与可视化
+tags:
+  - Python
+  - 数据分析
+---
+
 # Python 与数据分析
 
 Python 相关内容会围绕数据分析的完整流程展开：读取数据、清洗数据、探索数据、建模分析和可视化表达。
@@ -32,4 +40,3 @@ df = pd.DataFrame({
 
 print(df.describe())
 ```
-

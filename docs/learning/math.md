@@ -1,3 +1,11 @@
+---
+title: 数学工具箱
+description: 统计与编程中常用的线性代数、微积分和概率工具
+tags:
+  - 数学
+  - 统计
+---
+
 # 数学工具箱
 
 这里放学习统计和编程时常用的数学工具。它不追求完整覆盖所有数学内容，而是服务于「什么时候需要它、它帮我解决什么问题」。
@@ -23,6 +31,31 @@
 - 大数定律与中心极限定理。
 - 随机模拟在理解概率问题中的作用。
 
+## 公式示例
+
+以最小二乘回归为例，设计矩阵为 \(X\)、观测向量为 \(y\) 时，目标是最小化残差平方和：
+
+$$
+\hat{\beta}
+= \underset{\beta}{\operatorname{argmin}}\,\lVert y-X\beta\rVert_2^2
+$$
+
+当 \(X^\mathsf{T}X\) 可逆时，解可以写成：
+
+$$
+\hat{\beta}=(X^\mathsf{T}X)^{-1}X^\mathsf{T}y
+$$
+
+```python
+import numpy as np
+
+X = np.array([[1, 1], [1, 2], [1, 3]], dtype=float)
+y = np.array([2, 3, 5], dtype=float)
+beta = np.linalg.solve(X.T @ X, X.T @ y)
+
+print(beta)
+```
+
 ## 写作模板
 
 后续每篇工具笔记会尽量回答：
@@ -31,4 +64,3 @@
 - 它解决什么问题？
 - 它在统计或编程里哪里会出现？
 - 我怎么用一个小例子验证它？
-
