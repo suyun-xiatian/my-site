@@ -7,12 +7,8 @@ hide:
 
 <section class="home-hero">
   <div class="home-hero__content">
-    <div class="home-hero__eyebrow">Personal Knowledge Base · 2026</div>
-    <h1>把学习、代码和生活经验，整理成可以反复使用的知识。</h1>
-    <p>
-      你好，我是夏天。这里记录统计与数据分析、Python 实践、旅行足迹、足球观察和日常随笔。
-      内容会保持简洁、可复查，并随着新的问题持续生长。
-    </p>
+    <div class="home-hero__eyebrow">suyunax · 2026</div>
+    <h1>松下问童子，言师采药去。</h1>
     <div class="home-hero__actions">
       <a class="md-button md-button--primary" href="learning/">开始阅读</a>
       <a class="md-button" href="archive/">浏览全部文章</a>
@@ -42,7 +38,7 @@ hide:
   <span class="home-card__icon">Σ</span>
   <span class="home-card__label">Learning Notes</span>
   <h3>学习笔记</h3>
-  <p>统计、概率与数学工具。用直觉、公式、例子和代码，把概念整理成之后还能查阅的版本。</p>
+  <p>重修、新修系列。</p>
   <span class="home-card__link">进入学习笔记 →</span>
 </a>
 
@@ -50,7 +46,7 @@ hide:
   <span class="home-card__icon">&lt;/&gt;</span>
   <span class="home-card__label">Coding Practice</span>
   <h3>编程与项目</h3>
-  <p>Python、数据分析、建站记录和小项目。保留从问题到实现，再到复盘的完整过程。</p>
+  <p></p>
   <span class="home-card__link">查看编程实践 →</span>
 </a>
 
@@ -58,7 +54,7 @@ hide:
   <span class="home-card__icon">⌖</span>
   <span class="home-card__label">Travel Footprints</span>
   <h3>足迹</h3>
-  <p>记录去过的城市、走过的路线和旅途中的真实体验，把地点与当时的感受一起保存下来。</p>
+  <p></p>
   <span class="home-card__link">查看旅行足迹 →</span>
 </a>
 
@@ -66,7 +62,7 @@ hide:
   <span class="home-card__icon">✎</span>
   <span class="home-card__label">Notes &amp; Essays</span>
   <h3>随笔</h3>
-  <p>放下完整结构，记录当下的想法、阶段复盘和生活观察，让零散感受也有安放的位置。</p>
+  <p></p>
   <span class="home-card__link">阅读生活随笔 →</span>
 </a>
 
@@ -100,13 +96,4 @@ hide:
 - **2026-07-10**：[建站记录](coding/site.md) - 迁移至 Zensical，并启用 Modern 主题和新的部署流程。
 - **2026-07-10**：[生活栏目](life/index.md) - 新增足迹与随笔，重新整理生活内容结构。
 
-</div>
-
-<div class="home-footer-cta">
-  <div>
-    <span class="home-card__label">Keep exploring</span>
-    <h2>不知道从哪里开始？</h2>
-    <p>打开文章索引，或者使用 <kbd>⌘</kbd> + <kbd>K</kbd> 搜索关键词。</p>
-  </div>
-  <a class="md-button md-button--primary" href="archive/">查看文章索引</a>
 </div>
