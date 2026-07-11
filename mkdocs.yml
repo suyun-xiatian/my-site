@@ -11,7 +11,7 @@ theme:
   name: material
   variant: modern
   language: zh
-  logo: assets/images/branding/logo-complex.png
+  logo: assets/images/branding/favicon.png
   favicon: assets/images/branding/favicon.png
   icon:
     repo: fontawesome/brands/github
