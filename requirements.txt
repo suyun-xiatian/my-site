@@ -1,1 +1,2 @@
 zensical==0.0.50
+Pillow==11.3.0

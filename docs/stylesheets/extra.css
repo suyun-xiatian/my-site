@@ -235,10 +235,10 @@
   opacity: 0.72;
 }
 
-.home-card--learning { --card-accent: #356fe5; }
-.home-card--coding { --card-accent: #8a5bd7; }
-.home-card--footprints { --card-accent: #de7b35; }
-.home-card--essays { --card-accent: #299276; }
+.home-card--learning { --card-accent: #3F6373; }
+.home-card--coding { --card-accent: #746878; }
+.home-card--footprints { --card-accent: #65452F; }
+.home-card--essays { --card-accent: #71805A; }
 
 .home-card:hover {
   border-color: var(--card-accent, var(--md-accent-fg-color));

@@ -43,6 +43,29 @@ requirements.txt
 
 GitHub Pages 部署也使用相同的构建命令，生成结果写入 `site/`。
 
+## 发布前检查
+
+本地构建后，可以检查生成页面中的站内链接、图片路径和标题锚点：
+
+```bash
+.venv/bin/zensical build --clean
+.venv/bin/python scripts/check_site_links.py site
+```
+
+GitHub Actions 会执行同样的检查。只要发现页面链接、资源路径或锚点失效，就会停止部署并显示具体来源。
+
+## 旅行照片处理
+
+原始旅行照片不直接放入 `docs/`。先使用处理脚本清除 EXIF 信息、纠正拍摄方向、限制最长边，并生成网页使用的 WebP：
+
+```bash
+.venv/bin/python scripts/process_travel_images.py \
+  ~/Pictures/trip-example \
+  --output-dir docs/assets/images/footprints/trip-example
+```
+
+默认最长边为 1920 像素、WebP 质量为 84。可以使用 `--max-edge` 和 `--quality` 调整。原始照片不会被修改。
+
 ## 后续计划
 
 - 根据内容增长逐步完善文章分类和推荐阅读。

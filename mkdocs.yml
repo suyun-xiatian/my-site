@@ -11,8 +11,8 @@ theme:
   name: material
   variant: modern
   language: zh
-  logo: assets/images/branding/favicon.png
-  favicon: assets/images/branding/favicon.png
+  logo: assets/images/branding/brand-mark.webp
+  favicon: assets/images/branding/favicon-192.png
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil

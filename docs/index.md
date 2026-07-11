@@ -16,7 +16,7 @@ hide:
     </div>
   </div>
   <div class="home-hero__identity">
-    <img class="home-avatar off-glb" src="assets/images/branding/favicon.png" alt="夏天的网站标志">
+    <img class="home-avatar off-glb" src="assets/images/branding/brand-mark.webp" width="512" height="512" alt="夏天的网站标志">
     <strong>夏天</strong>
     <span>Statistics · Life</span>
     <div class="home-status"><i></i> 正在持续整理</div>
@@ -25,7 +25,7 @@ hide:
 
 <div class="home-stats" aria-label="网站内容概览">
   <div><strong>4</strong><span>内容主题</span></div>
-  <div><strong>13</strong><span>站点页面</span></div>
+  <div><strong>持续增加</strong><span>站点文章</span></div>
   <div><strong>2026</strong><span>开始记录</span></div>
   <div><strong>∞</strong><span>持续更新</span></div>
 </div>

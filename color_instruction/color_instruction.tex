@@ -1,0 +1,197 @@
+% !TEX program = xelatex
+\documentclass[10.5pt,a4paper,fontset=none]{ctexart}
+\usepackage[a4paper,top=20mm,bottom=18mm,left=19mm,right=19mm,headheight=19pt]{geometry}
+\usepackage{fontspec,xcolor,graphicx,booktabs,tabularx,array,colortbl,tcolorbox,enumitem,fancyhdr,titlesec,hyperref,microtype,needspace}
+\tcbuselibrary{skins,breakable}
+\setCJKmainfont[
+  Path=/Users/suyun/suyunax-site/latex_color_instruction/assets/fonts/,
+  AutoFakeBold=2
+]{SourceHanSerifSC-Regular.otf}
+\setCJKsansfont[
+  Path=/Users/suyun/suyunax-site/latex_color_instruction/assets/fonts/,
+  AutoFakeBold=2
+]{SourceHanSerifSC-Regular.otf}
+\setCJKmonofont[Path=/Users/suyun/suyunax-site/latex_color_instruction/assets/fonts/]{SourceHanSerifSC-Regular.otf}
+\setmainfont[
+  Path=/Users/suyun/suyunax-site/latex_color_instruction/assets/fonts/,
+  AutoFakeBold=2
+]{SourceHanSerifSC-Regular.otf}
+\setsansfont[
+  Path=/Users/suyun/suyunax-site/latex_color_instruction/assets/fonts/,
+  AutoFakeBold=2
+]{SourceHanSerifSC-Regular.otf}
+\definecolor{pine}{HTML}{183D2D}
+\definecolor{gold}{HTML}{A48245}
+\definecolor{paper}{HTML}{F7F3EA}
+\definecolor{ink}{HTML}{2B2B29}
+\definecolor{muted}{HTML}{74736D}
+\definecolor{rule}{HTML}{D8CFBE}
+\pagecolor{white}\color{ink}
+\hypersetup{colorlinks=true,linkcolor=pine,urlcolor=pine,pdfauthor={Suyun},pdftitle={日式家纹风松果 Logo 配色方案手册}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlist[itemize]{leftmargin=1.7em,itemsep=2pt,topsep=3pt,label=\textcolor{gold}{\small\textbullet}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\sffamily\scriptsize\color{pine} KAMON COLOR GUIDE}
+\fancyhead[R]{\sffamily\scriptsize\color{muted} 日式家纹风松果 Logo}
+\fancyfoot[C]{\sffamily\scriptsize\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.3pt}\renewcommand{\headrule}{\hbox to\headwidth{\color{rule}\leaders\hrule height \headrulewidth\hfill}}
+\titleformat{\section}{\sffamily\bfseries\LARGE\color{pine}}{}{0pt}{}[\vspace{2pt}{\color{gold}\titlerule[0.8pt]}]
+\titleformat{\subsection}{\sffamily\bfseries\large\color{pine}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{15pt}{8pt}\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcommand{\swatch}[1]{\begingroup\setlength{\fboxsep}{0pt}\colorbox[HTML]{#1}{\rule{0pt}{2.7ex}\rule{2.7em}{0pt}}\endgroup}
+\newcommand{\hex}[1]{\texttt{\##1}}
+\newtcolorbox{leadbox}{enhanced,breakable,colback=paper,colframe=paper,boxrule=0pt,borderline west={3pt}{0pt}{gold},left=10pt,right=10pt,top=8pt,bottom=8pt,arc=1mm}
+\newtcolorbox{promptbox}{enhanced,breakable,colback=paper,colframe=rule,boxrule=.5pt,left=10pt,right=10pt,top=8pt,bottom=8pt,arc=1mm,fontupper=\small\ttfamily}
+\newcommand{\palettehead}[3]{\Needspace{.27\textheight}%
+  \vspace{7pt}\noindent\begin{tcolorbox}[colback=paper,colframe=paper,boxrule=0pt,arc=1mm,left=0pt,right=8pt,top=0pt,bottom=0pt]
+  \colorbox[HTML]{#3}{\parbox[c][10mm][c]{14mm}{\centering\color{white}\sffamily\bfseries #1}}\hspace{8pt}{\sffamily\bfseries\large\color{pine}#2}
+  \end{tcolorbox}\vspace{2pt}}
+\newcommand{\palette}[9]{\par\smallskip%
+\begin{tabular}{C{13mm} p{25mm} p{28mm} p{87mm}}
+\rowcolor{pine}\color{white}\sffamily\bfseries 色块 & \color{white}\sffamily\bfseries 名称 & \color{white}\sffamily\bfseries 色值 & \color{white}\sffamily\bfseries 建议角色\\
+\swatch{#1} & #2 & \hex{#1} & #3\\
+\swatch{#4} & #5 & \hex{#4} & #6\\
+\swatch{#7} & #8 & \hex{#7} & #9\\
+\end{tabular}}
+\newcommand{\palettefour}[9]{\par\smallskip%
+\begin{tabular}{C{13mm} p{25mm} p{28mm} p{87mm}}
+\rowcolor{pine}\color{white}\sffamily\bfseries 色块 & \color{white}\sffamily\bfseries 名称 & \color{white}\sffamily\bfseries 色值 & \color{white}\sffamily\bfseries 建议角色\\
+\swatch{#1} & #2 & \hex{#1} & #3\\\swatch{#4} & #5 & \hex{#4} & #6\\\swatch{#7} & #8 & \hex{#7} & #9\\}
+\newcommand{\palettelast}[3]{\swatch{#1} & #2 & \hex{#1} & #3\\}
+
+\begin{document}
+\thispagestyle{empty}
+\vspace*{10mm}
+\begin{center}
+{\sffamily\bfseries\fontsize{26}{31}\selectfont\color{pine} 日式家纹风松果 Logo\par}
+\vspace{3mm}{\sffamily\bfseries\fontsize{19}{23}\selectfont\color{gold} 配色方案手册\par}
+\vspace{10mm}\includegraphics[width=.34\textwidth]{assets/image1.png}\par
+\vspace{8mm}{\sffamily\small\color{muted} Japanese Kamon · Flat Vector Emblem · Botanical Crest\par}
+\vspace{11mm}
+\begin{minipage}{.78\textwidth}\begin{leadbox}\centering
+本手册整理 8 套可直接使用的配色池，并提供色值、使用角色、配色比例和应用场景。
+\end{leadbox}\end{minipage}
+\vfill{\sffamily\small\color{muted} VERSION 1.0 \quad·\quad COLOR SYSTEM\par}
+\end{center}
+\clearpage
+
+\section{一、风格与配色逻辑}
+这类 Logo 的核心并不是“颜色丰富”，而是通过有限色彩、高对比负空间和高度对称结构，形成家纹、印章与现代品牌标志之间的平衡。建议每个正式版本使用 2--4 种颜色，其中至少保留一种白色或米白色，用来承担镂空分隔与呼吸感。
+
+\subsection{推荐用色原则}
+\begin{itemize}
+\item 以 60 / 30 / 10 为基本比例：背景或留白约 60\%，主色约 30\%，强调色约 10\%。
+\item 松果主体和外围松叶应保持明确明暗差，避免两个区域融成一团。
+\item 优先使用纯色块；不要加入金属渐变、玻璃质感、发光和复杂阴影。
+\item 正式品牌系统至少准备：彩色正稿、纯黑正稿、白色反稿三种版本。
+\item 图标缩小到 32 px 以下时，减少辅助色，只保留单色或双色版本。
+\end{itemize}
+
+\subsection{快速选择表}
+\rowcolors{2}{paper}{white}
+\begin{tabularx}{\textwidth}{l l Y}
+\toprule\sffamily\bfseries 方案 & \sffamily\bfseries 视觉气质 & \sffamily\bfseries 首选场景\\\midrule
+森林自然系 & 自然、稳妥、耐看 & 个人网站与默认主视觉\\
+传统和风系 & 文化、传统、克制 & 文创、出版与艺术项目\\
+墨绿金棕系 & 高级、沉稳、精品感 & 高端个人品牌与礼盒\\
+朱印红黑系 & 强烈、醒目、印章感 & 海报、周边与重点标识\\
+靛蓝米白系 & 安静、理性、学术 & 知识网站与研究主页\\
+松绿橙棕系 & 温暖、年轻、有活力 & 社交媒体与生活方式内容\\
+黑白单色系 & 经典、清晰、适配性强 & 印刷、雕刻、favicon\\
+现代品牌系 & 当代、柔和、设计感 & 作品集与现代文创\\\bottomrule
+\end{tabularx}
+
+\section{二、八套配色池}
+每套方案均可直接用于 Logo，也可以作为网站、头像、印刷品和周边的扩展色板。正式应用时不必同时启用色板中的所有颜色。
+
+\palettehead{01}{森林自然系\quad\small 最贴近现有 Logo}{124B32}
+以松针、木质和象牙白为灵感，是最稳妥、最耐看的默认方案。绿色负责建立自然与生命感，棕色突出松果主体，米白保留传统家纹的留白气质。
+\palettefour{124B32}{深松绿}{外围松叶、主品牌色、深色背景}{65452F}{栗棕色}{松果主体、标题点缀、辅助图形}{71805A}{苔藓绿}{次级辅助色、柔和的植物细节}\palettelast{F5F1E8}{象牙白}{背景、负空间、反白线条}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}象牙白 60\%｜深松绿 25\%｜栗棕 15\%；苔藓绿仅作少量延展。\quad\textbf{适用：}个人网站、头像、名片、印章、自然主题品牌。\end{leadbox}
+
+\palettehead{02}{传统和风系\quad\small 家纹与旧印刷气质}{264E70}
+采用传统日式配色逻辑，将藍色、弁柄红、墨色和胡粉白组合在一起。文化感更强，适合强调“东方、传统、安静、克制”的品牌表达。
+\palettefour{264E70}{藍色 Ai}{松叶、外围纹样、主背景}{8F3F2F}{弁柄色}{松果主体、印章式重点}{272727}{墨色}{单色版本、文字、强对比轮廓}\palettelast{F3EFE5}{胡粉色}{背景与负空间}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}胡粉色 65\%｜藍色 20\%｜弁柄色 15\%；墨色用于文字和单色稿。\quad\textbf{适用：}文化项目、出版物、文创、传统艺术社团。\end{leadbox}
+
+\palettehead{03}{墨绿金棕系\quad\small 高级与沉稳}{183D2D}
+深墨绿搭配哑光古金，能够产生精品茶室、香氛、酒店和高端文创的视觉感受。古金应采用平面色块，避免金属渐变和高光。
+\palettefour{183D2D}{墨绿}{外围松叶、主背景、主品牌色}{A48245}{古金色}{松果主体、徽章重点、装饰线}{4A3426}{深咖啡}{辅助主体、深色文字、印刷版}\palettelast{F3EBDD}{暖白}{背景、负空间、纸张底色}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}暖白 55\%｜墨绿 30\%｜古金 15\%；深咖啡用于替代黑色。\quad\textbf{适用：}高端个人品牌、礼盒、烫金替代稿、茶与香氛设计。\end{leadbox}
+
+\palettehead{04}{朱印红黑系\quad\small 强识别的印章感}{B33A2B}
+以朱砂红与墨黑构成强烈对比，最接近寺院印章、家纹标记和传统版画的视觉印象。辨识度很高，但更适合重点场景，不宜在大面积界面中长期使用。
+\palettefour{B33A2B}{朱砂红}{松果主体、印章重点、按钮强调}{24211F}{墨黑}{松叶、轮廓、单色版本}{614339}{暗茶色}{柔化黑色、辅助棕色细节}\palettelast{F6F0E4}{和纸白}{背景、负空间、纸张色}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}和纸白 65\%｜墨黑 20\%｜朱砂红 15\%；暗茶色控制在 10\% 以下。\quad\textbf{适用：}印章、海报标题、文创周边、传统活动标识。\end{leadbox}
+
+\palettehead{05}{靛蓝米白系\quad\small 安静、理性、学术}{243B53}
+蓝色系比绿棕方案更理性、更克制，适合个人知识网站、学术主页和内容品牌。灰蓝辅助色可以扩展为界面边框、卡片或图表配色。
+\palettefour{243B53}{深靛蓝}{主体图形、标题、深色背景}{3F6373}{青藍色}{外围植物、次级按钮、辅助图形}{8799A3}{灰蓝色}{界面辅助、图表、浅色细节}\palettelast{F2EEE4}{米白色}{背景与负空间}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}米白色 65\%｜深靛蓝 20\%｜青藍色 12\%｜灰蓝色 3\%。\quad\textbf{适用：}学术主页、知识库、博客、课程笔记、研究项目。\end{leadbox}
+
+\palettehead{06}{松绿橙棕系\quad\small 温暖且更有活力}{1A3D25}
+在自然色系中加入柿子橙，整体比原方案更年轻、更亲切。橙色只适合做少量点缀，避免抢走家纹结构本身的视觉中心。
+\palettefour{1A3D25}{森林绿}{松叶、主品牌色、深背景}{C66A32}{柿子橙}{少量重点、按钮、标识点}{74462E}{暖栗棕}{松果主体、辅助文字}\palettelast{FFF7E8}{奶油白}{背景与负空间}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}奶油白 60\%｜森林绿 25\%｜暖栗棕 12\%｜柿子橙 3\%。\quad\textbf{适用：}社交头像、年轻化个人品牌、生活方式内容、活动周边。\end{leadbox}
+
+\palettehead{07}{黑白单色系\quad\small 标准 Logo 必备版本}{171717}
+单色稿是标志系统中最重要的基础版本。它最接近真正的传统家纹，也最适合小尺寸、印章、激光雕刻、刺绣和低成本印刷。
+\palette{171717}{墨黑}{标准正色图形、文字、印刷}{454545}{深灰}{次级界面、柔和单色替代}{F6F3EC}{米白}{背景、反白图形、纸张底色}
+\begin{leadbox}\small\textbf{推荐比例：}正色版为墨黑 100\%＋米白背景；反白版为米白图形＋墨黑背景。\quad\textbf{适用：}印章、刺绣、压印、图标、favicon、小尺寸输出。\end{leadbox}
+
+\palettehead{08}{现代品牌系\quad\small 传统结构与当代审美}{163C35}
+深墨绿维持东方植物感，陶土色增加温度，灰紫色提供现代设计工作室气质。适合在个人品牌中扩展出网站、社交媒体和信息图表系统。
+\palettefour{163C35}{深墨绿}{主品牌色、松叶、标题}{746878}{灰紫色}{次级模块、图表、辅助信息}{A65D45}{陶土色}{松果主体、强调色}\palettelast{F4F2ED}{雾白色}{背景与负空间}\end{tabular}
+\begin{leadbox}\small\textbf{推荐比例：}雾白色 60\%｜深墨绿 25\%｜陶土色 12\%｜灰紫色 3\%。\quad\textbf{适用：}设计作品集、个人网站、社交媒体模板、现代文创。\end{leadbox}
+
+\section{三、三套优先推荐方案}
+以下三套最适合作为该松果家纹 Logo 的长期标准方案。建议先确定一套主方案，再用另外两套作为限定色或不同媒介中的替代版本。
+\begin{tcolorbox}[colback=paper,colframe=rule,boxrule=.5pt,arc=1mm]
+\textbf{最稳妥｜森林自然系}\quad 保留现有 Logo 的核心印象，适配范围最广。\\[5pt]
+\textbf{最传统｜传统和风系}\quad 家纹与旧印刷感最明显，文化辨识度高。\\[5pt]
+\textbf{最高级｜墨绿金棕系}\quad 质感沉稳，适合建立更成熟的个人品牌。
+\end{tcolorbox}
+
+\section{四、落地使用规范}
+\subsection{Logo 部件分配}
+\begin{itemize}
+\item \textbf{松果主体：}使用棕色、弁柄红、古金或陶土色等温暖色，帮助主体从植物外围中脱离出来。
+\item \textbf{外围松叶：}使用深绿、靛蓝或墨黑等冷色 / 深色，承担结构框架和圆形轮廓。
+\item \textbf{负空间线条：}优先使用象牙白、胡粉白、暖白或纯白；必须与相邻色块形成清晰对比。
+\item \textbf{背景：}正式版本优先浅色；深色背景下使用白色反稿，不建议给彩色稿加外发光。
+\end{itemize}
+\subsection{不同媒介建议}
+\rowcolors{2}{paper}{white}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{31mm}Y}\toprule
+\sffamily 媒介 & \sffamily\bfseries 建议\\\midrule
+网站与社交头像 & 优先森林自然系、靛蓝米白系或现代品牌系；头像缩小时减少到 2--3 色。\\
+印刷与名片 & 使用 CMYK 打样；米白建议由纸张本色承担，避免把暖白印成偏灰色。\\
+刺绣与织物 & 控制在 1--3 色；适当加粗负空间分隔，避免细线断裂。\\
+激光雕刻与印章 & 只使用黑白单色稿，将所有颜色转换成纯黑实体和透明负空间。\\
+烫金或压凹 & 采用墨绿金棕系的结构逻辑，但工艺稿仍需输出为单色专色版。\\\bottomrule
+\end{tabularx}
+
+\section{五、需要避免的配色问题}
+\begin{itemize}
+\item 同时使用五种以上明显不同的颜色，导致家纹结构失去统一性。
+\item 使用荧光绿、荧光粉、超高饱和紫等颜色，使传统纹章气质显得廉价或突兀。
+\item 主体与外围明度过近，导致松果轮廓在小尺寸下无法辨认。
+\item 用渐变代替色块，或加入厚重阴影、玻璃质感和高光。
+\item 白色分隔线过细；在缩放、印刷或刺绣时容易消失。
+\end{itemize}
+
+\section{六、生成式图像 Prompt 中的颜色写法}
+在生成 Logo 时，最好同时描述颜色名称、十六进制色值和各颜色承担的具体部件。例如：
+\begin{promptbox}
+Color palette: deep pine green \#124B32 for the surrounding pine needles, warm chestnut brown \#65452F for the central pinecone, ivory white \#F5F1E8 for the background and negative-space separation lines. Use flat solid colors only, no gradients, no metallic shine, no shadows.
+\end{promptbox}
+
+\clearpage
+\section{七、最终建议}
+\begin{leadbox}
+将“森林自然系”作为日常标准色，将“黑白单色系”作为所有工艺与小尺寸场景的基础版本，再保留“墨绿金棕系”作为高端或限定版本。这样能够在不改变 Logo 结构的前提下，覆盖网站、头像、印刷、周边和传统工艺等主要场景。
+\end{leadbox}
+\vfill\begin{center}{\sffamily\bfseries\small\color{gold}— END —}\end{center}
+\end{document}

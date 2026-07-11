@@ -24,8 +24,21 @@ jobs:
         with:
           python-version: '3.x'
 
-      - run: pip install -r requirements.txt
-      - run: zensical build --clean
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 检查无用系统文件
+        run: |
+          if find docs -name '.DS_Store' -print -quit | grep -q .; then
+            echo '错误：docs 中存在 .DS_Store，请在提交前清理。'
+            exit 1
+          fi
+
+      - name: 构建网站
+        run: zensical build --clean
+
+      - name: 检查站内链接、图片和页面锚点
+        run: python scripts/check_site_links.py site
 
       - uses: actions/configure-pages@v5
         with:
