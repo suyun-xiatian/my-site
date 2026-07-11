@@ -16,7 +16,7 @@ hide:
     </div>
   </div>
   <div class="home-hero__identity">
-    <img class="home-avatar off-glb" src="assets/images/logo_round_background.png" alt="夏天的网站标志">
+    <img class="home-avatar off-glb" src="assets/images/branding/favicon.png" alt="夏天的网站标志">
     <strong>夏天</strong>
     <span>Statistics · Life</span>
     <div class="home-status"><i></i> 正在持续整理</div>

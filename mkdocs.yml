@@ -11,8 +11,8 @@ theme:
   name: material
   variant: modern
   language: zh
-  logo: assets/images/logo_complex.png
-  favicon: assets/images/logo_round_background.png
+  logo: assets/images/branding/logo-complex.png
+  favicon: assets/images/branding/favicon.png
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -133,3 +133,9 @@ extra:
     - icon: fontawesome/brands/zhihu
       link: https://www.zhihu.com/people/shan-si-tao-hua-shi-sheng-kai-56
       name: 知乎
+    - icon: fontawesome/brands/weixin
+      link: /contact/
+      name: 微信
+    - icon: material/email
+      link: mailto:suyunax@gmail.com
+      name: 邮箱
