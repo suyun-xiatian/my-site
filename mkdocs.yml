@@ -1,6 +1,6 @@
 site_name: 夏天的个人网站
 site_url: https://suyunax.com
-site_description: 统计学习、编程实践、旅行足迹和生活随笔
+site_description: 数学学习、编程实践、旅行足迹和生活随笔
 site_author: 夏天
 repo_url: https://github.com/suyun-xiatian/my-site
 repo_name: suyun-xiatian/my-site
@@ -74,19 +74,17 @@ nav:
   - 文章索引: archive.md
   - 学习笔记:
       - learning/index.md
-      - 统计学习: learning/statistics.md
-      - 数学工具箱: learning/math.md
+      - 重修微积分:
+          - learning/calculus/index.md
+          - 第一章 极限与连续:
+              - learning/calculus/chapter-01/index.md
   - 编程:
       - coding/index.md
       - Python 与数据分析: coding/python.md
       - 项目与实践: coding/projects.md
       - 建站记录: coding/site.md
-  - 生活:
-      - life/index.md
-      - 足球: life/football.md
-      - 足迹: life/footprints.md
-      - 随笔: life/essays.md
-      - 书影音: life/media.md
+  - 足迹: footprints/index.md
+  - 随笔: essays/index.md
   - 更新日志: changelog.md
 
 markdown_extensions:
@@ -117,14 +115,11 @@ markdown_extensions:
 
 extra:
   tags:
-    统计: learning
     数学: learning
     Python: code
     数据分析: code
     建站: code
     项目: code
-    足球: life
-    书影音: life
     足迹: travel
     旅行: travel
     随笔: essay

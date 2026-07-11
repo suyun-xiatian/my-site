@@ -4,6 +4,24 @@
   --home-shadow: 0 0.7rem 2rem rgba(18, 28, 45, 0.08);
 }
 
+/* 正文中的普通链接 */
+.md-typeset a:not([class]) {
+  color: #2e6b3f;
+  text-decoration: none;
+}
+
+.md-typeset a:not([class]):hover,
+.md-typeset a:not([class]):focus {
+  color: #2e6b3f;
+  text-decoration: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not([class]),
+[data-md-color-scheme="slate"] .md-typeset a:not([class]):hover,
+[data-md-color-scheme="slate"] .md-typeset a:not([class]):focus {
+  color: #9bc8a8;
+}
+
 /* 阅读体验 */
 .md-typeset {
   line-height: 1.72;

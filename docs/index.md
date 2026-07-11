@@ -1,6 +1,6 @@
 ---
 title: 首页
-description: 夏天的个人知识库，记录统计学习、编程实践、旅行足迹与生活随笔
+description: 夏天的个人知识库，记录数学学习、编程实践、旅行足迹与生活随笔
 hide:
   - toc
 ---
@@ -8,7 +8,7 @@ hide:
 <section class="home-hero">
   <div class="home-hero__content">
     <div class="home-hero__eyebrow">suyunax · 2026</div>
-    <h1>松下问童子，言师采药去。</h1>
+    <h1>松下问童子，<br>言师采药去。</h1>
     <div class="home-hero__actions">
       <a class="md-button md-button--primary" href="learning/">开始阅读</a>
       <a class="md-button" href="archive/">浏览全部文章</a>
@@ -18,14 +18,14 @@ hide:
   <div class="home-hero__identity">
     <img class="home-avatar off-glb" src="assets/images/logo_round_background.png" alt="夏天的网站标志">
     <strong>夏天</strong>
-    <span>Statistics · Data · Life</span>
+    <span>Statistics · Life</span>
     <div class="home-status"><i></i> 正在持续整理</div>
   </div>
 </section>
 
 <div class="home-stats" aria-label="网站内容概览">
-  <div><strong>3</strong><span>内容主题</span></div>
-  <div><strong>15+</strong><span>站点页面</span></div>
+  <div><strong>4</strong><span>内容主题</span></div>
+  <div><strong>13</strong><span>站点页面</span></div>
   <div><strong>2026</strong><span>开始记录</span></div>
   <div><strong>∞</strong><span>持续更新</span></div>
 </div>
@@ -50,7 +50,7 @@ hide:
   <span class="home-card__link">查看编程实践 →</span>
 </a>
 
-<a class="home-card home-card--footprints" href="life/footprints/">
+<a class="home-card home-card--footprints" href="footprints/">
   <span class="home-card__icon">⌖</span>
   <span class="home-card__label">Travel Footprints</span>
   <h3>足迹</h3>
@@ -58,7 +58,7 @@ hide:
   <span class="home-card__link">查看旅行足迹 →</span>
 </a>
 
-<a class="home-card home-card--essays" href="life/essays/">
+<a class="home-card home-card--essays" href="essays/">
   <span class="home-card__icon">✎</span>
   <span class="home-card__label">Notes &amp; Essays</span>
   <h3>随笔</h3>
@@ -71,18 +71,18 @@ hide:
 ## 推荐阅读
 
 <div class="featured-list">
-  <a href="learning/statistics/">
-    <span class="featured-list__meta">学习笔记 · 统计</span>
-    <strong>统计学习：如何从有限数据中做出可靠判断</strong>
-    <span>从描述统计到贝叶斯方法，建立一条清晰的学习路线。</span>
+  <a href="learning/calculus/">
+    <span class="featured-list__meta">学习笔记 · 数学</span>
+    <strong>重修微积分：重新理解变化与累积</strong>
+    <span>从极限与连续开始，按章节重新梳理微积分。</span>
   </a>
   <a href="coding/projects/">
     <span class="featured-list__meta">编程 · 项目</span>
     <strong>项目与实践：把过程整理成可复现的记录</strong>
     <span>记录问题、输入、方法、结果、限制和下一步。</span>
   </a>
-  <a href="life/footprints/">
-    <span class="featured-list__meta">生活 · 足迹</span>
+  <a href="footprints/">
+    <span class="featured-list__meta">足迹</span>
     <strong>足迹：把去过的地方整理成个人地图</strong>
     <span>记录城市、路线、照片以及旅途中值得留下的片段。</span>
   </a>
@@ -94,6 +94,6 @@ hide:
 
 - **2026-07-10**：[网站功能升级](changelog.md) - 加入文章标签、公式渲染、图片灯箱、源码入口和新的首页信息架构。
 - **2026-07-10**：[建站记录](coding/site.md) - 迁移至 Zensical，并启用 Modern 主题和新的部署流程。
-- **2026-07-10**：[生活栏目](life/index.md) - 新增足迹与随笔，重新整理生活内容结构。
+- **2026-07-10**：新增足迹与随笔栏目，重新整理网站内容结构。
 
 </div>

@@ -19,7 +19,8 @@ docs/
   about.md
   learning/
   coding/
-  life/
+  footprints/
+  essays/
   javascripts/
   stylesheets/
 mkdocs.yml
